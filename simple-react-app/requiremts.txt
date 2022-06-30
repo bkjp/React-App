@@ -1,0 +1,10 @@
+Librairies installées
+---------------------
+
+1. npm install styled-components
+2. npm install redux @reduxjs/toolkit
+3. To upgrade react-redux to version 8 add the following
+   npm i react-redux@next
+4. npm install axios
+5. npm install react-router-dom
+6. redux dev tool

@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import { GlobalStyle } from "./globalStyle/globalStyle";
+import HomeScreen from "./pages/HomeScreen";
+import ErrorScreen from "./pages/ErrorScreen";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <h1>Hello world !</h1>
+      <div>Sidebar</div>
+      <Routes>
+        <Route path="/" element={<HomeScreen />} />
+        <Route path="*" element={<ErrorScreen />} />
+      </Routes>
+    </>
   );
 }
 
